@@ -51,14 +51,14 @@ type Product = {
 
 type SpecItem = Product & { qty: number };
 
-const STORAGE_LOGO = "/manus-storage/logo-blue_0805f6b2.png";
-const STORAGE_HERO = "/manus-storage/hero-product_12ddb344.jpg";
-const STORAGE_CATALOG = "/manus-storage/catalog-product_99d08219.webp";
-const STORAGE_POPULAR = "/manus-storage/popular-product_c828659a.png";
-const STORAGE_PIC1 = "/manus-storage/pic1_a4a5be04.png";
-const STORAGE_PIC3 = "/manus-storage/pic3_c10e2501.png";
-const STORAGE_PIC4 = "/manus-storage/pic4_81a266c2.png";
-const STORAGE_PIC5 = "/manus-storage/pic5_e567e986.png";
+const STORAGE_LOGO = "/images/logo-blue.png";
+const STORAGE_HERO = "/images/hero-product.jpg";
+const STORAGE_CATALOG = "/images/catalog-product.webp";
+const STORAGE_POPULAR = "/images/popular-product.png";
+const STORAGE_PIC1 = "/images/pic1.png";
+const STORAGE_PIC3 = "/images/pic3.png";
+const STORAGE_PIC4 = "/images/pic4.png";
+const STORAGE_PIC5 = "/images/pic5.png";
 
 const products: Product[] = [
   {

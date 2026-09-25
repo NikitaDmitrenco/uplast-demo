@@ -51,14 +51,16 @@ type Product = {
 
 type SpecItem = Product & { qty: number };
 
-const STORAGE_LOGO = "/images/logo-blue.png";
-const STORAGE_HERO = "/images/hero-product.jpg";
-const STORAGE_CATALOG = "/images/catalog-product.webp";
-const STORAGE_POPULAR = "/images/popular-product.png";
-const STORAGE_PIC1 = "/images/pic1.png";
-const STORAGE_PIC3 = "/images/pic3.png";
-const STORAGE_PIC4 = "/images/pic4.png";
-const STORAGE_PIC5 = "/images/pic5.png";
+const ASSET_BASE = import.meta.env.BASE_URL;
+
+const STORAGE_LOGO = `${ASSET_BASE}images/logo-blue.png`;
+const STORAGE_HERO = `${ASSET_BASE}images/hero-product.jpg`;
+const STORAGE_CATALOG = `${ASSET_BASE}images/catalog-product.webp`;
+const STORAGE_POPULAR = `${ASSET_BASE}images/popular-product.png`;
+const STORAGE_PIC1 = `${ASSET_BASE}images/pic1.png`;
+const STORAGE_PIC3 = `${ASSET_BASE}images/pic3.png`;
+const STORAGE_PIC4 = `${ASSET_BASE}images/pic4.png`;
+const STORAGE_PIC5 = `${ASSET_BASE}images/pic5.png`;
 
 const products: Product[] = [
   {

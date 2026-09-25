@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, Route, Switch, useLocation, useRoute } from "wouter";
+import { Link, Route, Router, Switch, useLocation, useRoute } from "wouter";
 import {
   ArrowDownRight,
   ArrowLeft,
@@ -269,6 +269,7 @@ function App() {
   const clearSpec = () => setSpec([]);
 
   return (
+    <Router base="/uplast-demo">
     <>
       <Toaster position="bottom-right" toastOptions={{ style: { background: "#102337", color: "#fff", border: "1px solid #254763" } }} />
       <Header specCount={spec.length} mobileOpen={mobileOpen} setMobileOpen={setMobileOpen} />
@@ -287,6 +288,7 @@ function App() {
       </div>
       <Footer />
     </>
+    </Router>
   );
 }
 
